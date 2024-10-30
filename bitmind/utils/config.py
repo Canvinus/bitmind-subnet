@@ -195,6 +195,20 @@ def add_miner_args(cls, parser):
         default="opentensor-dev",
         help="Wandb entity to log to.",
     )
+    
+    parser.add_argument(
+        "--axon.external_ip",
+        type=str,
+        default=None,
+        help="The external IP address of the miner.",
+    )
+    
+    parser.add_argument(
+        "--axon.external_port",
+        type=int,
+        default=8091,
+        help="The external port of the miner.",
+    )
 
 
 def add_validator_args(cls, parser):

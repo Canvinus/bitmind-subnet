@@ -23,5 +23,5 @@ pm2 start neurons/miner.py --name bitmind_miner -- \
   --wallet.hotkey $WALLET_HOTKEY \
   --axon.port $MINER_AXON_PORT \
   --blacklist.force_validator_permit $BLACKLIST_FORCE_VALIDATOR_PERMIT \
-  --external_ip $EXTERNAL_IP \
-  --external_port $EXTERNAL_PORT \
+  --axon.external_ip $EXTERNAL_IP \
+  --axon.external_port $EXTERNAL_PORT \
